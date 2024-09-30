@@ -10,43 +10,70 @@
 	
 	<!-- email and password -->
 	<div class="container mt-3">
-		<h2>Email and Password</h2>
-	<form action="/input">
-    <div class="mb-3 mt-3">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-    </div>
-    <div class="mb-3">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-    </div>
-    <div class="form-check mb-3">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-  </form>
-</div>
+	<form action= "/input" class="needs-validation">	
 
 <!-- options What you looking for -->
-<div class="container mt-3">
   <h2>What you looking for</h2>
-  <form action="/input">
     <div class="form-check">
-      <input type="radio" class="form-check-input" id="radio1" name="Q1" value="Meal">
+      <input type="radio" class="form-check-input" id="radio1" name="Q1" value="Meal" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
       <label class="form-check-label" for="radio1">Meal</label>
     </div>
     <div class="form-check">
-      <input type="radio" class="form-check-input" id="radio2" name="Q1" value="Snack">
+      <input type="radio" class="form-check-input" id="radio2" name="Q1" value="Snack" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
       <label class="form-check-label" for="radio2">Snack</label>
     </div>
 	<div class="form-check">
-      <input type="radio" class="form-check-input" id="radio3" name="Q1" value="Dessert">
+      <input type="radio" class="form-check-input" id="radio3" name="Q1" value="Dessert" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
       <label class="form-check-label" for="radio3">Dessert</label>
+    </div>
+
+<!-- Hot or Cold -->
+
+  <h2>Hot or cold </h2>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="Q2" value="Hot" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio1">Hot</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Q2" value="Cold" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio2">Cold</label>
+    </div>
+  
+  <!-- Hot or Cold -->
+  <h2>Flavor </h2>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="Q3" value="Sweet" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio1">Sweet</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Q3" value="Sour" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio2">Sour</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Q3" value="Spicy" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio2">Spicy</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Q3" value="Bitter" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio2">Bitter</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Q3" value="Salty" required>
+	  <div class="invalid-feedback">Please fill out this field.</div>
+      <label class="form-check-label" for="radio2">Salty</label>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit</button>
   </form>
-</div>
+	</div>
   
   
   
