@@ -9,39 +9,104 @@ def render_main():
 @app.route("/input")
 def render_main_q1():
     Q1 = request.args['Q1']
-    if Q1 == "Meal":
-        answer1 = "Teriyaki Chicken"
-        
-    if Q1 == "Snack":
-        answer1 = "Onigiri"
-        
-    if Q1 == "Dessert":
-        answer1 = "Mochi"    #q1
-        
     Q2 = request.args['Q2']
-    if Q2 == "Hot":
-        answer2 = "Ramen"
-        
-    if Q2 == "Cold":
-        answer2 = "Soba"    #q2
-        
     Q3 = request.args['Q3']
-    if Q3 == "Sweet":
-        answer3 = "Dango"
+    # Hot meals
+    if Q1 == "Meal" and Q2 == "Hot" and Q3 == "Sweet":
+        answer = "Teriyaki Chicken"
+        #image = "Teriyaki-Chicken.jfif"
         
-    if Q3 == "Sour":
-        answer3 = "Umeboshi" 
-        
-    if Q3 == "Spicy":
-        answer3 = "Chicken Curry Katsu"
-        
-    if Q3 == "Bitter":
-        answer3 = "Natto"
-        
-    if Q3 == "Salty":
-        answer3 = "Uni Sushi" #q3 
+    if Q1 == "Meal" and Q2 == "Hot" and Q3 == "Spicy":
+        answer = "Chicken Kurry Katsu"   
+     
+    if Q1 == "Meal" and Q2 == "Hot" and Q3 == "Sour":
+        answer = "Subata"
     
-    return render_template('input.html', response1 = answer1, response2 = answer2, response3 = answer3, )
+    if Q1 == "Meal" and Q2 == "Hot" and Q3 == "Bitter":
+        answer = "Goya Champuru"
+     
+    if Q1 == "Meal" and Q2 == "Hot" and Q3 == "Salty":
+        answer = "Ramen" 
+        # Cold meals
+    if Q1 == "Meal" and Q2 == "Cold" and Q3 == "Sweet":
+        answer = "Soba Noodles with dipping sauce"  
+
+    if Q1 == "Meal" and Q2 == "Cold" and Q3 == "Spicy":
+        answer = "Sushi with wasabi"
+        
+    if Q1 == "Meal" and Q2 == "Cold" and Q3 == "Sour":
+        answer = "Sushi with ginger"   
+     
+    if Q1 == "Meal" and Q2 == "Cold" and Q3 == "Bitter":
+        answer = "Natto"
+        
+    if Q1 == "Meal" and Q2 == "Cold" and Q3 == "Salty":
+        answer = "Uni Sushi"
+     
+     # Hot snacks
+    if Q1 == "Snack" and Q2 == "Hot" and Q3 == "Sweet":
+        answer = "Yakitori"
+        
+    if Q1 == "Snack" and Q2 == "Hot" and Q3 == "Spicy":
+        answer = "Koikeya Karamucho Spicy Chips"   
+     
+    if Q1 == "Snack" and Q2 == "Hot" and Q3 == "Sour":
+        answer = "Rice crackers with umeboshi"
+    
+    if Q1 == "Snack" and Q2 == "Hot" and Q3 == "Bitter":
+        answer = "KushiKatsu with Matcha Salt"
+     
+    if Q1 == "Snack" and Q2 == "Hot" and Q3 == "Salty":
+        answer = "Takoyaki" 
+        # Cold snacks
+    if Q1 == "Snack" and Q2 == "Cold" and Q3 == "Sweet":
+        answer = "Tofu"  
+
+    if Q1 == "Snack" and Q2 == "Cold" and Q3 == "Spicy":
+        answer = "Onigiri with Spicy Tuna"
+        
+    if Q1 == "Snack" and Q2 == "Cold" and Q3 == "Sour":
+        answer = "Onigiri with Umeboshi"   
+     
+    if Q1 == "Snack" and Q2 == "Cold" and Q3 == "Bitter":
+        answer = "Sansai"
+        
+    if Q1 == "Snack" and Q2 == "Cold" and Q3 == "Salty":
+        answer = "Pickled cucumbers with soy sauce"
+    
+    # Hot desserts
+    if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Sweet":
+        answer = "Yakitori"
+        
+    if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Spicy":
+        answer = "Koikeya Karamucho Spicy Chips"   
+     
+    if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Sour":
+        answer = "Rice crackers with umeboshi"
+    
+    if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Bitter":
+        answer = "KushiKatsu with Matcha Salt"
+     
+    if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Salty":
+        answer = "Takoyaki" 
+        # Cold desserts
+    if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Sweet":
+        answer = "Tofu"  
+
+    if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Spicy":
+        answer = "Onigiri with Spicy Tuna"
+        
+    if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Sour":
+        answer = "Onigiri with Umeboshi"   
+     
+    if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Bitter":
+        answer = "Sansai"
+        
+    if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Salty":
+        answer = "Pickled cucumbers with soy sauce"
+          
+      
+    return render_template('input.html', response = answer, )
     
     
 
