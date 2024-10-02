@@ -7,9 +7,15 @@
 
 
 {% block content %}
-
- <h1>Response:</h1>
-  <p>{{ response }}</p>
-<!--  <img src= "/static/{{shashin}}" alt= "Image of the food you picked" class="Img1"  > -->
+	<h1 class="heading" >Japanese Food Recommendations Form</h1>
+ 	
+ 	<div class = "center" >
+		<img src= "Jap_Food.jpg" alt= "Image of Japanese Food">
+	</div>
 	
+	<div>
+ 		<h2 class ="heading"> Your Recommendation</h2>
+  		<p class= "heading"> You should try {{ response }}</p>
+  	</div>	
+
 {% endblock %}

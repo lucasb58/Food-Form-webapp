@@ -76,34 +76,34 @@ def render_main_q1():
     
     # Hot desserts
     if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Sweet":
-        answer = "Yakitori"
+        answer = "Japanese Cheesecake"
         
     if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Spicy":
-        answer = "Koikeya Karamucho Spicy Chips"   
+        answer = "Ginger-spiced Dorayaki"   
      
     if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Sour":
-        answer = "Rice crackers with umeboshi"
+        answer = "Yuzu Daifuku"
     
     if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Bitter":
-        answer = "KushiKatsu with Matcha Salt"
+        answer = "Kurogama Purin"
      
     if Q1 == "Dessert" and Q2 == "Hot" and Q3 == "Salty":
-        answer = "Takoyaki" 
+        answer = "Kurogama Zenzai" 
         # Cold desserts
     if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Sweet":
-        answer = "Tofu"  
+        answer = "Matcha Ice Cream"  
 
     if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Spicy":
-        answer = "Onigiri with Spicy Tuna"
+        answer = "Wasabi Kit-Kat"
         
     if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Sour":
-        answer = "Onigiri with Umeboshi"   
+        answer = "Sour Japanese Candy"   
      
     if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Bitter":
-        answer = "Sansai"
+        answer = "Meiji Dark Chocolate"
         
     if Q1 == "Dessert" and Q2 == "Cold" and Q3 == "Salty":
-        answer = "Pickled cucumbers with soy sauce"
+        answer = "Sakura Dark Chocolate"
           
       
     return render_template('input.html', response = answer, )
